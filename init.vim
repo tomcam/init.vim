@@ -23,7 +23,7 @@ imap jk <esc>
 
 " Ctrl+W goes to the next buffer
 " while editing (imap means insert mode)
-:imap <C-W> :bn!<CR>     
+:imap <C-W> :bn! <CR>     
 
 " Make search case insensitive
 set ignorecase
