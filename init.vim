@@ -7,7 +7,7 @@
 " OR
 " # -L means follow redirects
 " # -O means use only the base filename, strip off the rest of the pathname 
-" curl -L -O https://raw.github.com/tomcam/init.vm/master/init.vim
+" curl -L -O https://raw.github.com/tomcam/init.vim/master/init.vim
 " mkdir -p $HOME/.config/nvim/
 " cp init.vim $HOME/.config/nvim/
 
@@ -23,8 +23,7 @@ imap jk <esc>
 :set autoindent
 
 " Ctrl+W goes to the next buffer
-" while editing (imap means insert mode)
-imap <C-W> :bn! <CR>     
+nnoremap <C-W> :bnext<CR>     
 
 " Make search case insensitive
 set ignorecase
@@ -45,5 +44,5 @@ set tabstop=4
 " Show current line number and column
 set ruler
 
-" Favorites are blue, evening, murphy, pablo, peachpuff, slate
-colorscheme blue
+" Favorites are blue, delek, evening, murphy, pablo, peachpuff, slate, torte
+colorscheme delek
