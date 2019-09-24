@@ -3,7 +3,7 @@
 " mkdir -p $HOME/.config/nvim/
 " # Edit or create the file
 " nvim $HOME/.config/nvim/init.vim
-
+" wget https://raw.github.com/tomcam/init.vim/master/init.vim --output-document $HOME/.config/nvim/init.vim
 
 " Windows
 " mkdir  %LOCALAPPDATA%\nvim
@@ -11,6 +11,14 @@
 
 " Pressing jk is the same as pressing Esc
 imap jk <esc>
+
+" Enable autoindent
+" Not necessary in neovim but a reminder for vim
+:set autoindent
+
+" Ctrl+W goes to the next buffer
+" while editing (imap means insert mode)
+:imap <C-W> :bn!<CR>     
 
 " Make search case insensitive
 set ignorecase
