@@ -4,6 +4,11 @@
 " # Edit or create the file
 " nvim $HOME/.config/nvim/init.vim
 " wget https://raw.github.com/tomcam/init.vim/master/init.vim --output-document $HOME/.config/nvim/init.vim
+" OR
+" # -L means follow redirects
+" # -O means use only the base filename, strip off the rest of the pathname 
+" curl -L -O https://raw.github.com/tomcam/neovim/master/init.vim
+" mv init.vim $HOME/.config/nvim/
 
 " Windows
 " mkdir  %LOCALAPPDATA%\nvim
