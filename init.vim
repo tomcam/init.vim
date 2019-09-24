@@ -7,8 +7,9 @@
 " OR
 " # -L means follow redirects
 " # -O means use only the base filename, strip off the rest of the pathname 
-" curl -L -O https://raw.github.com/tomcam/neovim/master/init.vim
-" mv init.vim $HOME/.config/nvim/
+" curl -L -O https://raw.github.com/tomcam/init.vm/master/init.vim
+" mkdir -p $HOME/.config/nvim/
+" cp init.vim $HOME/.config/nvim/
 
 " Windows
 " mkdir  %LOCALAPPDATA%\nvim
@@ -23,7 +24,7 @@ imap jk <esc>
 
 " Ctrl+W goes to the next buffer
 " while editing (imap means insert mode)
-:imap <C-W> :bn! <CR>     
+imap <C-W> :bn! <CR>     
 
 " Make search case insensitive
 set ignorecase
