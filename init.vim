@@ -18,6 +18,12 @@
 " Pressing jk is the same as pressing Esc
 imap jk <esc>
 
+" Make P work every time
+" Thank you, Benoit on Stackoverflow:
+" https://stackoverflow.com/questions/7163947/paste-multiple-times 
+" p pastes. gv re-selects. y copies it again. 
+xnoremap p pgvy
+
 " Enable autoindent
 " Not necessary in neovim but a reminder for vim
 :set autoindent
